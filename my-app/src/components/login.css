@@ -14,13 +14,13 @@
   }
   
   .btn-primary-large {
-    background: #4f46e5;
+    background: #FFD6BA;
     color: white;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   
   .btn-primary-large:hover {
-    background: #4338ca;
+    background: #FFD6BA;
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
   }
@@ -28,7 +28,7 @@
   .btn-secondary-large {
     background: white;
     color: #4f46e5;
-    border: 2px solid #4f46e5;
+    border: 2px solid #FFD6BA;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   

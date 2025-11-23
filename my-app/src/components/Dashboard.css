@@ -1,11 +1,12 @@
 .dashboard {
   text-align: center;
   padding-top: 2rem;
+
 }
 
 /* Hero Section */
 .hero {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .hero-title {
@@ -13,6 +14,7 @@
   color: #111827;
   margin-bottom: 1.5rem;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .hero-subtitle {
@@ -27,7 +29,7 @@
 
 .cta-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   justify-content: center;
   margin-bottom: 3rem;
 }
@@ -158,6 +160,22 @@
   padding: 2rem;
   text-align: center;
   color: #6b7280;
+}
+
+/*grad*/
+
+.gradient-rect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia";
+  font-size: 64px;
+  font-weight: lighter;
+  width: 1359px;
+  height: 339px;
+  background: linear-gradient(to bottom right, #BDE2DB, #FFD6BA);
+  margin: 2rem auto;
+  max-width:90%
 }
 
 /* Responsive */

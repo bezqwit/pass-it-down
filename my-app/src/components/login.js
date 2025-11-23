@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './Auth.css';
 import './login.css';
-//import Button from '../compenents/Button';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -11,6 +10,18 @@ export default function Login() {
     e.preventDefault();
     // Add login logic here
     console.log('Login attempt:', { email, password });
+    
+    // TODO: Replace with actual authentication
+    // For now, just set logged in status
+    localStorage.setItem('isLoggedIn', 'true');
+    localStorage.setItem('userEmail', email);
+    
+    // Check if there's a redirect parameter
+    const params = new URLSearchParams(window.location.search);
+    const redirect = params.get('redirect');
+    
+    // Redirect to the intended page or dashboard
+    window.location.href = redirect || '/';
   };
 
   return (

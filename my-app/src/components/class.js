@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './class.css';
+import './classes.css';
 
 export default function ClassPage() {
   // Example data - replace with props or API data
@@ -15,38 +15,38 @@ export default function ClassPage() {
     {
       id: 1,
       folderName: 'Complete Semester Notes - Fall 2024',
-      grade: 'A',
+      grade: ' A',
       rating: 4.8,
       totalRatings: 45,
-      uploadedBy: 'John D.',
-      uploadDate: '2024-12-15'
+      uploadedBy: 'Jane Doe ',
+      uploadDate: ' 2024-12-15'
     },
     {
       id: 2,
       folderName: 'Midterm & Final Review',
-      grade: 'A-',
+      grade: ' A-',
       rating: 4.5,
       totalRatings: 32,
-      uploadedBy: 'Emily R.',
-      uploadDate: '2024-12-10'
+      uploadedBy: 'The (Dwane) Rock ',
+      uploadDate: ' 2024-12-10'
     },
     {
       id: 3,
       folderName: 'Lecture Notes + Practice Problems',
-      grade: 'B+',
+      grade: ' B+',
       rating: 4.2,
       totalRatings: 28,
-      uploadedBy: 'Mike S.',
-      uploadDate: '2024-11-30'
+      uploadedBy: 'Whacker43 ',
+      uploadDate: ' 2024-11-30'
     },
     {
       id: 4,
       folderName: 'Weekly Summaries',
-      grade: 'A',
+      grade: ' A',
       rating: 4.6,
       totalRatings: 19,
-      uploadedBy: 'Sarah L.',
-      uploadDate: '2024-11-25'
+      uploadedBy: 'Dinosaurfan66 ',
+      uploadDate: ' 2024-11-25'
     }
   ]);
 

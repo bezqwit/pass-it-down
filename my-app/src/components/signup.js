@@ -54,37 +54,9 @@ export default function Signup() {
           <div className="progress-step" data-active={step >= 2}>2</div>
           <div className="progress-line" data-active={step >= 3}></div>
           <div className="progress-step" data-active={step >= 3}>3</div>
-          <div className="progress-line" data-active={step >= 4}></div>
-          <div className="progress-step" data-active={step >= 4}>4</div>
         </div>
 
         {step === 1 && (
-          <form onSubmit={handleSchoolSubmit} className="auth-form">
-            <p className="auth-subtitle">Select your school</p>
-            <div className="form-group">
-              <label htmlFor="school">School Name</label>
-              <select
-                id="school"
-                name="school"
-                value={formData.school}
-                onChange={handleInputChange}
-                required
-              >
-                <option value="">Choose your school...</option>
-                <option value="mit">MIT</option>
-                <option value="harvard">Harvard University</option>
-                <option value="stanford">Stanford University</option>
-                <option value="berkeley">UC Berkeley</option>
-                {/* Add more schools */}
-              </select>
-            </div>
-            <button type="submit" className="btn btn-primary btn-full">
-              Continue
-            </button>
-          </form>
-        )}
-
-        {step === 2 && (
           <form onSubmit={handleEmailSubmit} className="auth-form">
             <p className="auth-subtitle">Verify your school email</p>
             <div className="form-group">
@@ -102,17 +74,10 @@ export default function Signup() {
             <button type="submit" className="btn btn-primary btn-full">
               Send Verification Code
             </button>
-            <button 
-              type="button" 
-              className="btn btn-text"
-              onClick={() => setStep(1)}
-            >
-              Back
-            </button>
           </form>
         )}
 
-        {step === 3 && (
+        {step === 2 && (
           <form onSubmit={handleVerificationSubmit} className="auth-form">
             <p className="auth-subtitle">Enter the code sent to {formData.email}</p>
             <div className="form-group">
@@ -141,7 +106,7 @@ export default function Signup() {
           </form>
         )}
 
-        {step === 4 && (
+        {step === 3 && (
           <form onSubmit={handleFinalSubmit} className="auth-form">
             <p className="auth-subtitle">Complete your profile</p>
             <div className="form-group">

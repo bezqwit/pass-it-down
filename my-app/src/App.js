@@ -3,6 +3,8 @@ import Dashboard from './components/dashboard';
 import Login from './components/login';
 import Signup from './components/signup';
 import ClassPage from './components/class';
+import Classes from './components/classes';
+import Upload from './components/upload';
 import './App.css';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/class" element={<ClassPage />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/upload" element={<Upload />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>
